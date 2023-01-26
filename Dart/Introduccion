@@ -12,7 +12,7 @@ void main (){
   print (masNumeros);
   
 }
---------------------
+// --------------------
 // Mapas
 
 void main (){
@@ -50,4 +50,39 @@ void main (){
   print( persona['nombre'] );
   persona.addAll({'Segundo Nombre':'Juan'});
   print (persona);
+}
+
+// -------------------------
+//  Funciones
+
+void main (){
+  final nombre = 'fernando';
+  saludar(nombre);
+  saludar3('Cesar');
+  
+  saludardesorden(mensaje: 'Hi',nombre: nombre);
+  saludardesorden2(mensaje: 'Hi',nombre: "cesar"); // ambos valores estan requeridos
+}
+
+void saludar ( String x){
+  print ('Hola  $x');
+}
+
+void saludarOpc ( [String name = 'No name']){
+  print ('Hola  $name');
+}
+
+void saludar3 (String nombre , [String saludo = 'Hi']){
+  print ('$saludo  $nombre');
+}
+
+void saludardesorden({String nombre ='No name', String? mensaje}){
+  print ('Hola $nombre');
+}
+
+void saludardesorden2({
+  required String nombre , 
+  required String mensaje
+  }){
+  print ('Hola $nombre');
 }
