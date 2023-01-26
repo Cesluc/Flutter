@@ -1,0 +1,53 @@
+// Listas
+void main (){
+ 
+  List<double> numeros = [1,2,3,4,5,6,7,8,9,10];
+  
+  numeros.add(5);
+  
+  print (numeros);
+  
+  final masNumeros = List.generate(100, (int index) => 10);
+  
+  print (masNumeros);
+  
+}
+--------------------
+// Mapas
+
+void main (){
+//   strings
+ 
+  Map persona = {
+    'nombre': 'Fernando',
+    'edad': 35,
+    'soltero': false,
+    true: false,
+    1:100
+  };
+  
+  print( persona );
+  print( persona['nombre'] );
+  print( persona['nombre'] );
+  persona.addAll({3:'Juan'});
+  print (persona);
+}
+
+// Mapas declarando los valores
+
+void main (){
+//   strings
+ 
+  Map<String, dynamic> persona = {
+    'nombre': 'Fernando',
+    'edad': 35,
+    'soltero': false,
+    
+  };
+  
+  print( persona );
+  print( persona['nombre'] );
+  print( persona['nombre'] );
+  persona.addAll({'Segundo Nombre':'Juan'});
+  print (persona);
+}
